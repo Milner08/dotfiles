@@ -1,0 +1,204 @@
+// ---------------
+//     BASICS
+// ---------------
+
+.syntax--basic {
+  color: @syntax-text-color;
+}
+
+.syntax--comment {
+  color: @gray;
+}
+
+.syntax--string {
+  color: @orange;
+}
+
+.syntax--constant {
+  color: @violet;
+}
+// Booleans in color
+
+.syntax--boolean {
+  font-weight: bold;
+
+  &.syntax--true {
+    color: @dark-green;
+  }
+
+  &.syntax--false {
+    color: @red;
+  }
+}
+
+.syntax--support.syntax--class.syntax--php,
+.syntax--variable {
+  color: @dark-green;
+}
+
+.syntax--keyword,
+.syntax--support.syntax--function.syntax--construct.syntax--php {
+  color: @blue;
+}
+
+.syntax--storage {
+  color: @dark-gray;
+}
+
+.syntax--meta.syntax--function-call.syntax--php,
+.syntax--storage.syntax--type {
+  color: @dark-violet;
+}
+
+.syntax--entity.syntax--name.syntax--class {
+  color: @dark-green;
+}
+
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: @dark-green;
+}
+
+.syntax--entity.syntax--name.syntax--function {
+  color: @dark-green;
+}
+
+.syntax--keyword.syntax--operator.syntax--class.syntax--php,
+.syntax--variable.syntax--parameter {
+  color: @orange;
+}
+
+.syntax--entity.syntax--name.syntax--tag,
+.syntax--meta.syntax--tag.syntax--sgml.syntax--html,
+.syntax--punctuation.syntax--definition.syntax--tag {
+  color: @blue;
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: @dark-green;
+}
+
+.syntax--support.syntax--function {
+  color: @dark-violet;
+}
+
+.syntax--support.syntax--constant {
+  color: @dark-violet;
+}
+
+.syntax--support.syntax--class,
+.syntax--support.syntax--type {
+  color: @orange;
+}
+
+.syntax--support.syntax--other.syntax--variable {
+  color: @light-black;
+}
+
+.syntax--invalid {
+  color: @white;
+  background-color: @red;
+}
+
+.syntax--markup.syntax--deleted {
+  color: @dark-pink;
+}
+
+.syntax--markup.syntax--inserted {
+  color: @dark-green;
+}
+
+.syntax--markup.syntax--heading {
+  font-weight: bold;
+  color: @dark-pink;
+}
+
+.syntax--markup.syntax--italic {
+  font-style: italic;
+}
+
+.syntax--markup.syntax--bold {
+  font-weight: bold;
+}
+
+.syntax--markup.syntax--underline {
+  text-decoration: underline;
+}
+
+.syntax--markup.syntax--quote,
+.syntax--punctuation.syntax--definition.syntax--blockquote {
+  font-style: italic;
+  color: @dark-gray;
+}
+
+.syntax--markup.syntax--list {
+  color: @dark-gray;
+}
+
+.syntax--markup.syntax--raw,
+.syntax--markup.syntax--raw.syntax--block.syntax--markdown {
+  color: @green;
+}
+// ---------------
+//      HTML
+// ---------------
+
+.syntax--entity.syntax--name.syntax--tag.syntax--doctype.syntax--html {
+  color: @black;
+}
+// ---------------
+//   CSS & LESS
+// ---------------
+// @media in blue
+
+.syntax--media.syntax--css,
+.syntax--media.syntax--css > .syntax--keyword {
+  color: @blue;
+  font-weight: bold;
+}
+// hightlight less vars
+
+.syntax--variable.syntax--less {
+  background-color: fade(@green, 10%);
+  font-style: italic;
+}
+// ---------------
+//    MARKDOWN
+// ---------------
+// different colors for every heading
+
+.syntax--markup.syntax--heading-1,
+.syntax--markup.syntax--heading-1 > .syntax--marker {
+  color: @pink;
+}
+
+.syntax--markup.syntax--heading-2,
+.syntax--markup.syntax--heading-2 > .syntax--marker {
+  color: @dark-pink;
+}
+
+.syntax--markup.syntax--heading-3,
+.syntax--markup.syntax--heading-3 > .syntax--marker {
+  color: @blue;
+}
+
+.syntax--markup.syntax--heading-4,
+.syntax--markup.syntax--heading-4 > .syntax--marker {
+  color: @blue;
+  font-weight: normal;
+}
+
+.syntax--markup.syntax--heading-5,
+.syntax--markup.syntax--heading-5 > .syntax--marker {
+  color: @dark-gray;
+}
+
+.syntax--markup.syntax--heading-6,
+.syntax--markup.syntax--heading-6 > .syntax--marker {
+  color: @dark-gray;
+  font-weight: normal;
+}
+// blue link, gray punctuation
+
+.syntax--link > .syntax--punctuation {
+  color: @gray;
+}

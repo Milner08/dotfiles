@@ -1,0 +1,119 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/m3/jmd_st_97vn1dzjrxmj7tbhc0000gn/T/d-117931-1845-1aqrfw4.yic35o2yb9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/m3/jmd_st_97vn1dzjrxmj7tbhc0000gn/T/d-117931-1845-1aqrfw4.yic35o2yb9/package.tgz",
+        "spec": "/private/var/folders/m3/jmd_st_97vn1dzjrxmj7tbhc0000gn/T/d-117931-1845-1aqrfw4.yic35o2yb9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/m3/jmd_st_97vn1dzjrxmj7tbhc0000gn/T/apm-install-dir-117931-1845-1cxbldy.44pbricnmi"
+    ]
+  ],
+  "_from": "../d-117931-1845-1aqrfw4.yic35o2yb9/package.tgz",
+  "_id": "ide-json@0.1.0",
+  "_inCache": true,
+  "_location": "/ide-json",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/m3/jmd_st_97vn1dzjrxmj7tbhc0000gn/T/d-117931-1845-1aqrfw4.yic35o2yb9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/m3/jmd_st_97vn1dzjrxmj7tbhc0000gn/T/d-117931-1845-1aqrfw4.yic35o2yb9/package.tgz",
+    "spec": "/private/var/folders/m3/jmd_st_97vn1dzjrxmj7tbhc0000gn/T/d-117931-1845-1aqrfw4.yic35o2yb9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117931-1845-1aqrfw4.yic35o2yb9/package.tgz",
+  "_shasum": "5e8325e177a39216c76fd9a0de2c2b98021f203d",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/m3/jmd_st_97vn1dzjrxmj7tbhc0000gn/T/d-117931-1845-1aqrfw4.yic35o2yb9/package.tgz",
+  "_where": "/private/var/folders/m3/jmd_st_97vn1dzjrxmj7tbhc0000gn/T/apm-install-dir-117931-1845-1cxbldy.44pbricnmi",
+  "author": {
+    "name": "Ryan Watts",
+    "email": "ryandwatts@gmail.com",
+    "url": "https://github.com/rwatts3"
+  },
+  "bugs": {
+    "url": "https://github.com/rwatts3/atom-ide-json/issues"
+  },
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-languageclient": "^0.4.0",
+    "fuzzaldrin-plus": "^0.4.1",
+    "vscode-json-languageserver-bin": "latest"
+  },
+  "description": "JSON language support for Atom-IDE.",
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "^2.4.2"
+  },
+  "engines": {
+    "atom": ">=1.19.0"
+  },
+  "enhancedScopes": [
+    "source.json"
+  ],
+  "homepage": "https://github.com/rwatts3/atom-ide-json#readme",
+  "keywords": [
+    "atom-ide",
+    "json",
+    "lsp",
+    "language-client"
+  ],
+  "license": "MIT",
+  "main": "./build/main",
+  "name": "ide-json",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  },
+  "readme": "# IDE-JSON package\n\nJSON language support for Atom-IDE, powered by [VSCODE JSON Language Server](https://github.com/vscode-langservers/vscode-json-languageserver-bin).\n\n## Companion Packages\nThis package is currently a *Work in Progress*.  You should also install:\n\n1. The **atom-ide-ui** package to expose the functionality within Atom\n\n## Development\n1. Clone this repo `$ git clone https://github.com/rwatts3/atom-ide-json <my-dir>`\n2. cd to the repos directory `$ cd <my-dir>`\n3. Install Deps `$ npm i`\n4. Start the app in dev mode. `$ npm run dev`\n\n## License\nMIT License.  See [the license](LICENSE.md) for more details.\n\n> This package was [`Made By Ryan Watts`](https://www.ryanwatts.me)",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwatts3/atom-ide-json.git"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "dev": "tsc --watch",
+    "prepublish": "npm run compile"
+  },
+  "version": "0.1.0"
+}

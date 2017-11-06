@@ -1,0 +1,8 @@
+"*":
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui": {}
+  core:
+    telemetryConsent: "limited"
+  "exception-reporting":
+    userId: "8a461f8e-3475-4d76-8d3c-119e32ef5e73"
+  "ide-java": {}
